@@ -4,7 +4,7 @@ export default class extends Stimulus.Controller {
   }
 
   initialize() {
-    this.showCurrentSlide()
+    this.showCurrentSlide();
   }
 
   next() {
