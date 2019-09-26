@@ -17,17 +17,17 @@ export default class extends Stimulus.Controller {
 
   showCurrentSlide() {
     this.slideTargets.forEach((el, i) => {
-      el.classList.toggle("slide--current", this.index === i)
+      el.classList.toggle("slide--current", this.index === i);
     })
   }
 
   get index() {
-    return parseInt(this.data.get("index"))
+    return parseInt(this.data.get("index"));
   }
 
   set index(value) {
     this.data.set("index", value);
-    this.showCurrentSlide()
+    this.showCurrentSlide();
   }
   
 }
